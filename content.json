@@ -1,0 +1,100 @@
+{
+  "site": {
+    "name": "Clawbay",
+    "tagline": "Get it Done",
+    "title": "Placeholder Name — Portfolio",
+    "description": "A clean, dark minimalist portfolio.",
+    "status": "Open to Inquiries",
+    "location": "Canada",
+    "timezone": "Mdt"
+  },
+  "hero": {
+    "eyebrow": "Available for opportunities",
+    "headline": "Clawbay.",
+    "subheadline": "Doing it the best, being the best",
+    "blurb": "A portfolio for Clawbay",
+    "metrics": [
+      { "k": "4+", "v": "Years building" },
+      { "k": "3+", "v": "Projects" },
+      { "k": "100+", "v": "Vouches" }
+    ],
+    "chips": ["UI", "Animations", "Brand"]
+  },
+  "profile": {
+    "initials": "Claw",
+    "role": "Doer of things",
+    "note": "Influencer, entrepreneur, UI designer, builder, animator, networker, and an all around great guy.",
+    "resumeUrl": "#",
+    "email": "clawbay@proton.me",
+    "calendarUrl": "#"
+  },
+  "about": {
+    "subtitle": "A quick snapshot of who I am and what I do.",
+    "bio": "I'm Clawbay a developer, an influencer, and an entrepreneur. I have a passion for building things and sharing what I learn along the way. With over 4 years of experience in design and frontend development, I've worked on a variety of projects that have allowed me to hone my skills and make an impact. I'm always looking for new opportunities to collaborate and create meaningful work.",
+    "principles": [
+      "Keep it simple, always.",
+      "Understand before being understood.",
+      "Do what you say, say what you do."
+    ],
+    "capabilities": ["UI", "Animations", "Building", "Testing", "Social Media"],
+    "toolbox": ["Figma", "React", "TypeScript", "Node", "CSS"]
+  },
+  "links": {
+    "subtitle": "Socials, contact, and wherever you want people to go next.",
+    "contactBlurb": "Want to collaborate or have a question? Send an email and I’ll respond as soon as I can.",
+    "nowText": "Focusing on a few passion projects and building my personal brand. Always open to new connections and opportunities.",
+    "socials": [
+      { "label": "Roblox", "handle": "@cIawbay", "url": "https://www.roblox.com/users/902880594/profile" },
+      { "label": "Discord", "handle": "@clawbay.", "url": "https://discord.com/818685939755909140" },
+      { "label": "Youtube", "handle": "@Clawbay", "url": "https://www.youtube.com/channel/UClkANiEBzxfLyODYRIzywww" },
+      { "label": "Instagram", "handle": "@placeholder", "url": "https://instagram.com/" }
+    ]
+  },
+  "work": {
+    "subtitle": "Selected client work / professional highlights.",
+    "items": [
+      {
+        "id": "work-1",
+        "title": "Client Site Redesign",
+        "category": "Web",
+        "year": "2025",
+        "badge": "Case Study",
+        "desc": "Dark, minimalist redesign with improved conversion and performance.",
+        "tags": ["UI", "Frontend", "Performance"],
+        "links": [
+          { "label": "Live", "url": "https://example.com" }
+        ],
+        "bullets": [
+          "Designed a clean component system.",
+          "Improved lighthouse performance (placeholder).",
+          "Implemented responsive layouts and accessibility."
+        ],
+        "notes": "Replace this with details: constraints, results, and what you learned."
+      }
+    ]
+  },
+  "projects": {
+    "subtitle": "Personal builds, experiments, and open-source.",
+    "items": [
+      {
+        "id": "proj-1",
+        "title": "Minimal Portfolio Template",
+        "category": "Web",
+        "year": "2026",
+        "badge": "Open Source",
+        "desc": "A fast, accessible portfolio with a clean dark UI and project drawer.",
+        "tags": ["HTML", "CSS", "JS"],
+        "links": [
+          { "label": "Repo", "url": "https://github.com/" },
+          { "label": "Demo", "url": "https://example.com" }
+        ],
+        "bullets": [
+          "Single config file for content updates.",
+          "Keyboard-accessible modal drawer.",
+          "Filter + search for work/projects."
+        ],
+        "notes": "Replace with your repo link and what makes it unique."
+      }
+    ]
+  }
+}

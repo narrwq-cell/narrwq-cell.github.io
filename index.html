@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Placeholder Name — Portfolio</title>
+  <meta name="description" content="A clean, dark minimalist portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name" id="brandName">Placeholder Name</div>
+          <div class="brand-tagline" id="brandTagline">Minimal • Professional • Interactive</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <div class="nav-links" id="navLinks" role="tablist" aria-label="Sections">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="home">Home</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="about">About</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="work">Work</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="projects">Projects</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="links">Links</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <div class="container">
+
+      <!-- HOME -->
+      <section class="panel is-active" data-panel="home" aria-labelledby="homeTitle">
+        <div class="hero">
+          <div class="hero-left">
+            <p class="eyebrow" id="heroEyebrow">Available for opportunities</p>
+            <h1 class="hero-title" id="heroTitle">
+              Placeholder Name
+              <span class="hero-title-sub" id="heroSubtitle">Designing and building calm, high-signal experiences.</span>
+            </h1>
+            <p class="hero-blurb" id="heroBlurb">
+              This is a dark, minimalist portfolio with interactive project details, filters, and clean typography.
+              Replace the placeholder content in <span class="mono">content.json</span>.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#work" data-jump="work">View Work</a>
+              <a class="btn btn-ghost" href="#links" data-jump="links">Contact / Links</a>
+            </div>
+
+            <div class="hero-metrics" id="heroMetrics" aria-label="Highlights">
+              <!-- injected -->
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="profile-card" role="region" aria-label="Profile card">
+              <div class="profile-top">
+                <div class="avatar" aria-hidden="true">
+                  <span class="avatar-initials" id="avatarInitials">PN</span>
+                </div>
+                <div>
+                  <div class="profile-name" id="profileName">Placeholder Name</div>
+                  <div class="profile-role" id="profileRole">Role / Title</div>
+                </div>
+              </div>
+              <div class="profile-body">
+                <p class="profile-note" id="profileNote">
+                  Short bio goes here. Add what you do, what you care about, and what you’re looking for.
+                </p>
+                <div class="profile-actions">
+                  <a class="mini" id="resumeLink" href="#" target="_blank" rel="noreferrer">Resume</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <a class="mini" id="emailLink" href="mailto:you@example.com">Email</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <a class="mini" id="calendarLink" href="#" target="_blank" rel="noreferrer">Calendar</a>
+                </div>
+              </div>
+              <div class="profile-bottom">
+                <div class="status-pill" id="statusPill">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span id="statusText">Open to work</span>
+                </div>
+                <div class="chip-row" id="chipRow">
+                  <!-- injected -->
+                </div>
+              </div>
+            </div>
+
+            <div class="ambient" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="panel" data-panel="about" aria-labelledby="aboutTitle">
+        <div class="panel-head">
+          <h2 class="panel-title" id="aboutTitle">About</h2>
+          <p class="panel-subtitle" id="aboutSubtitle">A quick snapshot of who I am and what I do.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3 class="card-title">Bio</h3>
+            <p class="card-text" id="aboutBio"></p>
+            <div class="divider"></div>
+            <h3 class="card-title">Principles</h3>
+            <ul class="list" id="aboutPrinciples"></ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Capabilities</h3>
+            <div class="pill-grid" id="aboutCapabilities"></div>
+            <div class="divider"></div>
+            <h3 class="card-title">Toolbox</h3>
+            <div class="pill-grid" id="aboutToolbox"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="panel" data-panel="work" aria-labelledby="workTitle">
+        <div class="panel-head">
+          <h2 class="panel-title" id="workTitle">Work</h2>
+          <p class="panel-subtitle" id="workSubtitle">Selected client work / professional highlights.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="filters" id="workFilters" aria-label="Work filters">
+            <!-- injected -->
+          </div>
+          <div class="search">
+            <input id="workSearch" class="input" type="search" placeholder="Search work…" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="cards" id="workGrid" aria-live="polite"></div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="panel" data-panel="projects" aria-labelledby="projectsTitle">
+        <div class="panel-head">
+          <h2 class="panel-title" id="projectsTitle">Projects</h2>
+          <p class="panel-subtitle" id="projectsSubtitle">Personal builds, experiments, and open-source.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="filters" id="projectFilters" aria-label="Project filters">
+            <!-- injected -->
+          </div>
+          <div class="search">
+            <input id="projectSearch" class="input" type="search" placeholder="Search projects…" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="cards" id="projectsGrid" aria-live="polite"></div>
+      </section>
+
+      <!-- LINKS -->
+      <section class="panel" data-panel="links" aria-labelledby="linksTitle">
+        <div class="panel-head">
+          <h2 class="panel-title" id="linksTitle">Links</h2>
+          <p class="panel-subtitle" id="linksSubtitle">Socials, contact, and wherever you want people to go next.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3 class="card-title">Social</h3>
+            <div class="socials" id="socials"></div>
+            <div class="divider"></div>
+            <h3 class="card-title">Quick Contact</h3>
+            <p class="card-text" id="contactBlurb"></p>
+            <div class="btn-row">
+              <a class="btn btn-primary" id="contactEmailBtn" href="mailto:you@example.com">Email me</a>
+              <button class="btn btn-ghost" id="copyEmailBtn" type="button">Copy email</button>
+            </div>
+            <p class="hint" id="copyHint" aria-live="polite"></p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Now</h3>
+            <p class="card-text" id="nowText"></p>
+            <div class="divider"></div>
+            <h3 class="card-title">Availability</h3>
+            <div class="availability">
+              <div class="availability-row">
+                <span class="label">Status</span>
+                <span class="value" id="availabilityStatus">Open to work</span>
+              </div>
+              <div class="availability-row">
+                <span class="label">Location</span>
+                <span class="value" id="availabilityLocation">United States (placeholder)</span>
+              </div>
+              <div class="availability-row">
+                <span class="label">Timezone</span>
+                <span class="value" id="availabilityTimezone">Local</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="hint">Tip: Update all content in <span class="mono">content.json</span>.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <span id="footerName">Placeholder Name</span>
+          <span class="muted">•</span>
+          <span class="muted" id="footerNote">Built with HTML/CSS/JS</span>
+        </div>
+        <div class="footer-right">
+          <a class="mini" href="#top" id="backToTop">Back to top</a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <!-- MODAL / DRAWER -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Project details">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title" id="modalTitle">Title</div>
+          <div class="modal-meta" id="modalMeta">Category • Year</div>
+        </div>
+        <button class="icon-btn" id="modalClose" aria-label="Close details">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <div class="modal-tags" id="modalTags"></div>
+
+        <div class="divider"></div>
+
+        <div class="modal-links" id="modalLinks"></div>
+
+        <div class="divider"></div>
+
+        <h4 class="modal-subhead">What I did</h4>
+        <ul class="list" id="modalBullets"></ul>
+
+        <div class="divider"></div>
+
+        <h4 class="modal-subhead">Notes</h4>
+        <p class="hint" id="modalNotes"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
